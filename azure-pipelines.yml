@@ -89,6 +89,7 @@ stages:
           - download: current
             artifact: drop
           - task: AzureWebApp@1
+            enabled: false
             displayName: 'Azure App Service Deploy: website'
             inputs:
               azureSubscription: 'Azure Service'
